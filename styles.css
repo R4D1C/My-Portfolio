@@ -80,6 +80,17 @@ section {
     transition: .5s;
 }
 
+@media only screen and (max-width: 768px) {
+    #navbar ul {
+        gap: 1rem;
+    }
+    
+    #navbar a {
+        font-size: 1.4rem;
+        padding: 2rem 3rem;
+    }
+}
+
 /* HEADER ENDS */
 
 /* ----------------------------------------------------------------------------------------------------------- */
@@ -114,6 +125,16 @@ section {
     font-weight: 800;
 }
 
+@media only screen and (max-width: 768px) {
+    #welcome-section h1 {
+        font-size: 6rem;
+    }
+
+    #welcome-section h2 {
+        font-size: 3rem;
+    }
+}
+
 /* WELCOME SECTION ENDS */
 
 /* ----------------------------------------------------------------------------------------------------------- */
@@ -129,7 +150,7 @@ section {
 }
 
 .knowledge-container {
-    width: 70%;
+    width: 75%;
     height: 65rem;
     background-color: var(--secondary-lighter);
     border-radius: .8rem;
@@ -176,6 +197,57 @@ section {
 
 .knowledge-content span {
     font-weight: 800;
+}
+
+@media only screen and (max-width: 1400px) {
+    .knowledge-container {
+        height: 55rem;
+    }
+
+    .knowledge-content {
+        height: 45rem;
+        width: 28rem;
+    }
+
+    .knowledge-content p {
+        font-size: 2rem;
+    }
+
+    .knowledge-content i {
+        font-size: 18rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .knowledge-container {
+        width: 85%;
+    }
+    .knowledge-content {
+        height: 45rem;
+        width: 28rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .knowledge-container {
+        height: 75rem;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .knowledge-content {
+        height: 30rem;
+        width: 26rem;
+    }
+
+    .knowledge-content p {
+        font-size: 1.6rem;
+    }
+
+    .knowledge-content i {
+        margin-top: 1rem;
+        font-size: 12rem;
+    }
 }
 
 /* KNOWLEDGE SECTION ENDS */
@@ -286,6 +358,29 @@ section {
     transition: 0.5s;
 }
 
+@media only screen and (max-width: 1400px) {
+    #projects-container {
+        gap: 3rem 6rem;
+        margin: 6rem 2rem 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #projects-container {
+        gap: 2rem 3rem;
+    }
+
+    .projects-content p {
+        font-size: 1.8rem;
+    }
+
+    .txt {
+        font-size: 1.8rem;
+        width: 30rem;
+        margin-top: 26rem;
+    }
+}
+
 /* PROJECTS SECTION ENDS */
 
 /* ----------------------------------------------------------------------------------------------------------- */
@@ -295,15 +390,94 @@ section {
 #who-im-section {
     width: 100%;
     background-color: var(--tertiary--color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-flex;
+    position: relative;
+    z-index: -1;
+}
+
+#who-im-section img {
+    height: 70rem;
+    position: absolute;
+    top: 12%;
+    right: 16%;
+}
+
+#who-im-container {
+    display: block;
+}
+
+#who-im-container h2 {
+    font-size: 4.5rem;
+    margin: 14rem 0 2rem 8rem;
+    color: orangered;
+}
+
+.txt2 {
+    width: 50%;
+    margin: 0 12rem;
+    border-left: .8rem solid orangered;
+    padding: 4rem 0 4rem .5rem;
+}
+
+#who-im-section p {
+    font-size: 2.4rem;
+    padding-left: 4rem;
 }
 
 #footer {
-    background-color: transparent;
-    height: 20rem;
+    height: 10rem;
     width: 100%;
-    display: flex;
-    
+    border-top: 15px solid var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#footer p {
+    text-align: center;
+    margin: 3rem auto;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1500px) {
+    #who-im-section img {
+        height: 60rem;
+        right: 10%;
+    }
+
+    #who-im-section p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #who-im-section img {
+        height: 50rem;
+        top: 25%;
+        right: 5%;
+    }
+
+    #who-im-container h2 {
+        font-size: 4rem;
+        margin-left: 3rem;
+    }
+
+    .txt2 {
+        margin-left: 5rem;
+        border-left: .4rem solid orangered;
+    }
+
+    #who-im-section p {
+        padding-left: 1rem;
+    }
+
+    #footer p {
+        font-size: 1.6rem;
+        margin: 2rem auto;
+    }
+
+    #footer {
+        border-top: 1rem solid var(--main-color);
+        height: 8rem;
+    }
 }
