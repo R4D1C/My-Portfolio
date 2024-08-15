@@ -120,8 +120,18 @@ section {
         padding: .6rem 1.2rem;
     }
 
+    #media {
+        height: 4rem;
+        width: 14rem;
+        right: 80px;
+    }
+
     #media a {
         padding: .4rem;
+    }
+
+    #media i {
+        font-size: 2.2rem;
     }
 }
 
@@ -232,8 +242,20 @@ section {
 }
 
 .knowledge-content i {
-    font-size: 6rem;
+    font-size: 14rem;
     margin-bottom: 1rem;
+}
+
+.fa-html5 {
+    color: orangered;
+}
+
+.fa-css3-alt {
+    color: rgb(55, 55, 255);
+}
+
+.fa-square-js {
+    color: rgb(204, 204, 26);
 }
 
 .knowledge-content p {
@@ -246,6 +268,12 @@ section {
     right: 0;
     font-size: 20rem;
     color: rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (max-width: 360px) {
+    .knowledge-content i {
+        font-size: 8rem;
+    }
 }
 
 /* PROJECTS SECTION */
@@ -302,6 +330,19 @@ section {
 @media only screen and (max-width: 360px) {
     #projects {
         padding: 1rem 2rem;
+    }
+
+    .projects-content {
+        width: 260px;
+        height: 180px;
+    }
+
+    .projects-content h3 {
+        font-size: 12px;
+    }
+
+    .projects-content p {
+        font-size: 10px;
     }
 }
 
